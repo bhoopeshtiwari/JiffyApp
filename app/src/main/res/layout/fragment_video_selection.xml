@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/img_app_background"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/d_24dp"
+        android:paddingRight="@dimen/d_24dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_select_video_you_want_to_play"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/s_18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgVideoSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_15dp">
+
+            <RadioButton
+                android:id="@+id/rbYouTube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/youtube"
+                android:textSize="@dimen/s_16sp"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbM3U8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m3u8"
+                android:textSize="@dimen/s_16sp"
+                android:buttonTint="@color/colorPrimary" />
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>

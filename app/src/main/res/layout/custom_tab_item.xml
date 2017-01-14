@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/d_2dp"
+        android:paddingRight="@dimen/d_2dp">
+
+        <TextView
+            android:id="@+id/text_tab_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:gravity="center"
+            android:textColor="@drawable/tab_text_selector"
+            android:textAllCaps="true" />
+
+        <View
+            android:id="@+id/tab_base_line"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_2dp"
+            android:layout_below="@id/text_tab_name"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tab_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/d_2dp"
+        android:background="@drawable/tab_selector"
+        android:visibility="visible" />
+</RelativeLayout>

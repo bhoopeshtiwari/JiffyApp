@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_app_background"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/d_5dp" />
+
+    <TextView
+        android:id="@+id/tvSendMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_popup_sync"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ivReload"
+        android:background="@drawable/button_shape"
+        android:text="@string/share"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/s_14sp"
+        android:layout_margin="@dimen/d_10dp"/>
+
+    <ImageView
+        android:id="@+id/ivReload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_popup_sync"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_shape"
+        android:padding="@dimen/d_5dp"
+        android:layout_margin="@dimen/d_10dp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvNoContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/s_18sp"
+        android:text="@string/no_contact_found"/>
+</RelativeLayout>

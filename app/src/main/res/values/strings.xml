@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Jiffy App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="invalid_username">invalid username</string>
+    <string name="invalid_password">invalid password</string>
+    <string name="username_blank">Username field can\'t be blank</string>
+    <string name="password_blank">Password field can\'t be blank</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="youtube">YouTube</string>
+    <string name="m3u8">m3u8</string>
+    <string name="please_select_video_you_want_to_play">Please select your preference</string>
+    <string name="share">share</string>
+    <string name="no_contact_found">No contact found</string>
+    <string name="enable_contact_permission">Please enable permission to show the contacts</string>
+    <string name="loading_contacts">"Loading Contacts.. "</string>
+    <string name="select_contact_to_share_mail">Please select contacts to share video url</string>
+    <string name="title_youtube">Youtube</string>
+    <string name="title_m3u8">m3u8 video</string>
+    <string name="network_error">Please establish network connection</string>
+    <string name="allow_permission">Allow permission and press reload to get contacts</string>
+
+</resources>
